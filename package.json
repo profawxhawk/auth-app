@@ -1,0 +1,34 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "app for basic auth",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "bharath",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^5.8.9",
+    "validator": "^10.9.0"
+  }
+}
