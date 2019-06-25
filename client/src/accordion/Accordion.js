@@ -58,6 +58,16 @@ class Accordion extends Component {
           </li>
           <li>
             <div class='collapsible-header'>
+              <i class='material-icons'>apps</i>Id_Proof_upload
+            </div>
+            <div class='collapsible-body'>
+              <Link to='/id_proof_upload'>
+                <span>click to upload</span>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div class='collapsible-header'>
               <i class='material-icons'>apps</i>Virtual Account
             </div>
             <div class='collapsible-body'>

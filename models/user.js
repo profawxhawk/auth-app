@@ -38,7 +38,15 @@ module.exports = (sequelize, DataTypes) => {
       last_login: {
         type: DataTypes.DATE
       },
-
+      imageName: {
+        type: String,
+        default: 'none',
+        required: true
+      },
+      imageData: {
+        type: String,
+        required: true
+      },
       status: {
         type: DataTypes.ENUM('active', 'inactive'),
         defaultValue: 'active'

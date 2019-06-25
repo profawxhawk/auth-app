@@ -71,7 +71,7 @@ router.post('/login', (req, res) => {
           payload,
           keys.secretOrKey,
           {
-            expiresIn: 600 // 1 year in seconds
+            expiresIn: 10000 // 1 year in seconds
           },
           (err, token) => {
             res.json({

@@ -11,6 +11,7 @@ import Qr_scan from './components/QR scan/Prizes';
 import Claimed from './components/Account/claimed';
 import Credited from './components/Account/Credited';
 import Dashboard from './components/dashboard/Dashboard';
+import id_proof from './components/file_upload/id_proof';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -71,6 +72,11 @@ class App extends Component {
                   component={Credited}
                 />
                 <PrivateRoute exact path='/qr_scan' component={Qr_scan} />
+                <PrivateRoute
+                  exact
+                  path='/id_proof_upload'
+                  component={id_proof}
+                />
               </Switch>
             </div>
           </Router>
